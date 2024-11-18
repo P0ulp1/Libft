@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: phautena <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: phautena <phautena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 09:46:11 by phautena          #+#    #+#             */
-/*   Updated: 2024/05/28 15:53:55 by phautena         ###   ########.fr       */
+/*   Updated: 2024/11/18 15:03:39 by phautena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 
 	if (nmemb < 1 || size < 1)
 	{
-		memo = malloc(0);
+		memo = NULL;
 		return (memo);
 	}
 	if (nmemb > SIZE_MAX / size)
